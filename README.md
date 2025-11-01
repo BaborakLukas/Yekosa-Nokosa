@@ -1,6 +1,6 @@
 # KO:SA
 
-**Team:** David MixIns, Popper Dell Cribt  
+**Creators:** David MixIns, Popper Dell Cribt  
 **Status:** Early development (concept + first mechanics)  
 **Engine:** Godot Engine (GDScript)
 
@@ -21,4 +21,5 @@ KO:SA is an action/survival game about two brothers who collect **shards**, and 
 
 ## Documentation
 - [01 – Základní koncepce](./01_zakladni_koncepce.md)
+
 - [02 – Game design](./02_game_design.md)
