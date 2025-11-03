@@ -27,16 +27,17 @@ The world has been overrun by **system bugs** - corrupted, insect-like entities 
 
 ## 6. Setting and Style
 - **Environment:** neon city / 80's Miami aesthetic
-- **Time:** retro-future (future, but with 80s vibes)
+- **Time:** retro-future (future, but with 80's vibes)
 - **Visual style:** retrowave, pixel-art, strong colors (purple, pink, cyan), glitch elements
 
 ## 7. Limitations and Scope
 - 2D platformer
 - Local / shared co-op (2 players)
-- Short game (up to ~15 minutes per run)
-- School project - focus on **gameplay, movement, and juice** (responsiveness, effects), graphics stylized rather than realistic
+- Short game (up to ~20 minutes per run)
+- School project - focus on **gameplay, movement, and some spice** (responsiveness, effects), graphics stylized rather than realistic
 
 ## 8. Inspirations
 - **Similar games:** *Kingdom Two Crowns* (progression / defending something), wave-based games
-- **What I'm taking from them:** simple progression, defending a core, upgrades
-- **What I don't want:** slow movement, passive gameplay, muted graphics
+- **What I'm taking from them:** simple progression, defending a something, upgrades
+- **What I don't want:** slow movement, passive gameplay, muted graphics, dark ages aesthetic 
+
