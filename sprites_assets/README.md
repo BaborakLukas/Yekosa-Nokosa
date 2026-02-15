@@ -1,4 +1,8 @@
 # Assets Preview
+### by Popper Dell Cribt & David MixIns
+
+## There's no need for detailed description of the assets because all of them we're made in an online free sprite maker or a free pixel art maker.
+## We used Krita for sprites and Pixilart.com for the drawings.
 
 ## Icon_Yekosa
 ![Icon_Yekosa](Icon_Yekosa.png)
