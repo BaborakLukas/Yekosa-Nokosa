@@ -44,4 +44,4 @@
 ![Sprite Kosa](sptite_kosa.png)
 
 ## Latest prewiev
-![Latest prewiev](latest prewiev.png)
+![Latest prewiev](latest%20prewiev.png)
