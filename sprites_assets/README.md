@@ -47,4 +47,4 @@
 ![Latest prewiev](latest%20prewiev.png)
 
 ## Menu music
-![Music](sprites_assets/Untitled (1).mp3)
+![Music](Untitled (1).mp3)
