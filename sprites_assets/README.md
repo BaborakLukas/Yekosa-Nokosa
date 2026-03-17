@@ -41,7 +41,7 @@
 ![Smoke2](smoke2.png)
 
 ## Sprite Kosa
-![Sprite Kosa](sptite%20kosa.png)
+![Sprite Kosa](sptite kosa.png)
 
 ## Latest prewiev
 ![Latest prewiev](latest%20prewiev.png)
