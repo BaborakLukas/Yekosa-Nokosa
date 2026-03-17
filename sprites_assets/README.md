@@ -41,13 +41,13 @@
 ![Smoke2](smoke2.png)
 
 ## Sprite Kosa
-![Sprite Kosa](sptite kosa.png)
+![Sprite Kosa](sptite_kosa.png)
 
 ## Latest prewiev
 ![Latest prewiev](latest%20prewiev.png)
 
 ## Menu music
-[Music](Untitled%20(1).mp3)
+[Music](menu_music.mp3)
 
 ## Gunshot
 [pew pew](shooting.mp3)
