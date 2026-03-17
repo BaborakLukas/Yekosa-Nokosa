@@ -22,8 +22,8 @@
 ## Idle Kosa
 ![Idle Kosa](idle_kosa.png)
 
-## Kulka
-![Kulka](kulka.png)
+## Bullet
+![Bullet](kulka.png)
 
 ## Nekosa Run Shoot
 ![Nekosa Run Shoot](nekosa_run_shoot.png)
