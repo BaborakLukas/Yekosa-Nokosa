@@ -47,4 +47,13 @@
 ![Latest prewiev](latest%20prewiev.png)
 
 ## Menu music
-![Music](Untitled (1).mp3)
+[Music](Untitled%20(1).mp3)
+
+## Gunshot
+[pew pew]()
+
+## Run sound
+[run Forrest run]()
+
+## Scythe swing
+[swush]()
