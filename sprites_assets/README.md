@@ -41,7 +41,7 @@
 ![Smoke2](smoke2.png)
 
 ## Sprite Kosa
-![Sprite Kosa](sptite_kosa.png)
+![Sprite Kosa](sptite%20kosa.png)
 
 ## Latest prewiev
 ![Latest prewiev](latest%20prewiev.png)
@@ -50,10 +50,10 @@
 [Music](Untitled%20(1).mp3)
 
 ## Gunshot
-[pew pew]()
+[pew pew](shooting.mp3)
 
 ## Run sound
-[run Forrest run]()
+[run Forrest run](run.mp3)
 
 ## Scythe swing
-[swush]()
+[swush](swing.mp3)
