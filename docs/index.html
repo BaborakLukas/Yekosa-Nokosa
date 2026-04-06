@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KO:SA - Action/Survival Co-op Game</title>
+</head>
+<body>
+    <header>
+        <div id="header-links">
+            <a href="#about-game"><h1>About</h1></a>
+            <a href="#features"><h1>Features</h1></a>
+            <a href="#mechanics"><h1>Mechanics</h1></a>
+            <a href="#tech"><h1>Tech</h1></a>
+            <a href="#team"><h1>Team</h1></a>
+        </div>
+    </header>
+
+    <div class="video-container">
+        <video autoplay loop muted src="retrowave_loop.mp4" id="Retrowave"></video>
+        <div class="overlay">
+            <h1 id="game-title" class="text-over-video">KO:SA</h1>
+            <p class="tagline">Defend The Mother. Transform. Survive.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- About Section -->
+        <section id="about-game">
+            <div class="section-content">
+                <div class="title-wrapper">
+                    <div class="palmtree" id="palmtree-left"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                    <h2 class="section-title">What is KO:SA?</h2>
+                    <div class="palmtree" id="palmtree-right"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                </div>
+                <div class="about-content">
+                    <p class="intro-text">KO:SA is an <span class="highlight">action/survival</span> game about two brothers who collect <span class="highlight">shards</span>, and fight off <span class="highlight">bug-like enemies</span> to protect <span class="highlight">The Mother</span> - a central entity keeping their world alive.</p>
+                    
+                    <div class="gameplay-preview">
+                        <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png" alt="KO:SA Gameplay Preview" class="preview-image">
+                    </div>
+
+                    <div class="story-box">
+                        <div class="story-with-image">
+                            <div class="story-text">
+                                <h3>The Story</h3>
+                                <p>The world has been overrun by <strong>system bugs</strong> - corrupted, insect-like entities that are slowly destroying reality. The last hope is <strong>The Mother</strong>, a protected core that will give birth to the future savior. The two brothers must hold the line, collect power shards, and keep The Mother alive long enough.</p>
+                            </div>
+                            <div class="mother-image">
+                                <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/finalMutti.png" alt="The Mother">
+                                <span class="image-label">The Mother</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="section-content">
+                <div class="title-wrapper">
+                    <h2 class="section-title">Core Features</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa" class="feature-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nekosa" class="feature-sprite">
+                        </div>
+                        <h3>Local Co-op</h3>
+                        <p>Play together as two brothers. One can transform into a weapon while the other wields them - true teamwork!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/kulka.png" alt="Bullet" class="feature-sprite bullet-sprite">
+                        </div>
+                        <h3>Wave-Based Combat</h3>
+                        <p>Survive increasingly difficult waves of corrupted bugs. Each wave brings stronger enemies and better rewards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/shard.png" alt="Shard" class="feature-sprite shard-sprite">
+                        </div>
+                        <h3>Shard Collection</h3>
+                        <p>Collect shards from defeated enemies to upgrade weapons, improve mobility, and enhance The Mother's defenses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/gun.png" alt="Gun" class="feature-sprite gun-sprite">
+                        </div>
+                        <h3>Transformation</h3>
+                        <p>Transform into weapon form - you can still jump and dash, but the other player can pick you up as a powerful weapon!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mechanics Section -->
+        <section id="mechanics">
+            <div class="section-content">
+                <div class="title-wrapper">
+                    <div class="palmtree" id="palmtree-left"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                    <h2 class="section-title">Game Mechanics</h2>
+                    <div class="palmtree" id="palmtree-right"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                </div>
+                
+                <div class="brothers-container">
+                    <div class="brother-card">
+                        <div class="brother-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa Icon">
+                        </div>
+                        <h3>Yekosa (Brother A)</h3>
+                        <p class="brother-role">Runner / Short-range</p>
+                        <ul>
+                            <li>Stronger at close range</li>
+                            <li>Can transform into weapon form</li>
+                            <li>In weapon form: jump and dash only</li>
+                            <li>Can pick up and use the other brother as a weapon</li>
+                            <li>Great for aggressive plays</li>
+                        </ul>
+                    </div>
+                    <div class="brother-card">
+                        <div class="brother-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nekosa Icon">
+                        </div>
+                        <h3>Nokosa (Brother B)</h3>
+                        <p class="brother-role">Gunner / Long-range</p>
+                        <ul>
+                            <li>Stronger at shooting from distance</li>
+                            <li>Can transform into weapon form</li>
+                            <li>In weapon form: jump and dash only</li>
+                            <li>Effective at covering large areas</li>
+                            <li>Some combos are stronger when he is the weapon</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gameplay-loop">
+                    <h3>Core Loop</h3>
+                    <div class="loop-steps">
+                        <div class="loop-step"><span class="step-num">1</span>Wave starts - enemies spawn</div>
+                        <div class="loop-step"><span class="step-num">2</span>Players fight - move, transform, carry, shoot</div>
+                        <div class="loop-step"><span class="step-num">3</span>Enemies drop shards - collect them</div>
+                        <div class="loop-step"><span class="step-num">4</span>Wave ends - short safe phase</div>
+                        <div class="loop-step"><span class="step-num">5</span>Buy upgrades - spend shards</div>
+                        <div class="loop-step"><span class="step-num">6</span>Next wave - harder enemies</div>
+                    </div>
+                </div>
+
+                <div class="enemies-section">
+                    <h3>Enemies</h3>
+                    <div class="enemies-grid">
+                        <div class="enemy-card">
+                            <h4>Basic Bug</h4>
+                            <p>Cannon fodder - walks straight to The Mother</p>
+                        </div>
+                        <div class="enemy-card">
+                            <h4>Fast Bug</h4>
+                            <p>Pressure on players - targets nearest player</p>
+                        </div>
+                        <div class="enemy-card">
+                            <h4>Ranged Bug</h4>
+                            <p>Denies safe spots - shoots corrupt projectiles</p>
+                        </div>
+                        <div class="enemy-card">
+                            <h4>Corruptor (Elite)</h4>
+                            <p>Danger for The Mother - tries to drain her HP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Section -->
+        <section id="tech">
+            <div class="section-content">
+                <div class="title-wrapper">
+                    <h2 class="section-title">Technology</h2>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h3>Godot Engine 4.5.1</h3>
+                        <p>Modern open-source game engine</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>GDScript</h3>
+                        <p>Python-like scripting language</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Target: PC</h3>
+                        <p>Local co-op gameplay</p>
+                    </div>
+                </div>
+                <div class="status-box">
+                    <h3>Current Status</h3>
+                    <ul class="status-list">
+                        <li class="done">Idea / core fantasy</li>
+                        <li class="done">Basic prototype in Godot</li>
+                        <li class="progress">Playable level</li>
+                        <li class="done">Art & sound</li>
+                        <li class="todo">Release build</li>
+                    </ul>
+                </div>
+
+                <!-- Sprites Gallery -->
+                <div class="sprites-gallery">
+                    <h3>Game Assets</h3>
+                    <p class="gallery-subtitle">Pixel art made with Krita & Pixilart.com</p>
+                    <div class="sprites-grid">
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Icon Yekosa">
+                            <span>Icon Yekosa</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Icon Nekosa">
+                            <span>Icon Nekosa</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Yekosa_jump.png" alt="Yekosa Jump">
+                            <span>Yekosa Jump</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/idle_kosa.png" alt="Idle Kosa">
+                            <span>Idle Kosa</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/nekosa_run_shoot.png" alt="Nekosa Run Shoot">
+                            <span>Nekosa Shoot</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/reload_nekosa.png" alt="Reload Nekosa">
+                            <span>Reload Nekosa</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/sptite_kosa.png" alt="Sprite Kosa">
+                            <span>Sprite Kosa</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/gun.png" alt="Gun">
+                            <span>Gun</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/kulka.png" alt="Bullet">
+                            <span>Bullet</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/shard.png" alt="Shard">
+                            <span>Shard</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/finalMutti.png" alt="The Mother">
+                            <span>The Mother</span>
+                        </div>
+                        <div class="sprite-item">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/smoke.png" alt="Smoke">
+                            <span>Smoke FX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <div class="section-content">
+                <div class="title-wrapper">
+                    <div class="palmtree" id="palmtree-left"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                    <h2 class="section-title">The Team</h2>
+                    <div class="palmtree" id="palmtree-right"><img src="9af04b8c4e724e803f94b5f3033774ee.gif" alt="retrowave palm tree"></div>
+                </div>
+                <div class="team-cards">
+                    <div class="team-card">
+                        <h3>David MixIns</h3>
+                        <p>Creator & Developer</p>
+                    </div>
+                    <div class="team-card">
+                        <h3>Popper Dell Cribt</h3>
+                        <p>Creator & Developer</p>
+                    </div>
+                </div>
+                <div class="github-link">
+                    <a href="https://github.com/BaborakLukas/Yekosa-Nokosa" target="_blank">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>KO:SA - School Project | Godot Engine 4.5.1</p>
+            <p>Genre: 2D Platformer, Survival, Co-op | Target: ~15+ | Runtime: ~20 min per run</p>
+        </div>
+    </footer>
+</body>
+</html>
