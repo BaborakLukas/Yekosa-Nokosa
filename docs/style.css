@@ -35,6 +35,28 @@ header {
     border-bottom: 2px solid #ff00ff;
     background: linear-gradient(180deg, rgba(26, 10, 46, 0.95) 0%, rgba(102, 51, 153, 0.9) 100%);
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    gap: 1em;
+}
+
+#lang-toggle {
+    position: absolute;
+    right: 2em;
+    background: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+#lang-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
 }
 
 header #header-links {
