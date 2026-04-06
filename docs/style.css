@@ -615,62 +615,6 @@ section {
     padding: 2em;
 }
 
-/* Sprites Gallery */
-.sprites-gallery {
-    margin-top: 3em;
-    text-align: center;
-}
-
-.sprites-gallery h3 {
-    color: #ff00ff;
-    font-family: 'ViceCity', sans-serif;
-    font-size: 1.8em;
-    margin-bottom: 0.3em;
-}
-
-.gallery-subtitle {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1em;
-    margin-bottom: 1.5em;
-}
-
-.sprites-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5em;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.sprite-item {
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
-    border: 2px solid rgba(0, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 1em;
-    transition: all 0.3s ease;
-}
-
-.sprite-item:hover {
-    transform: scale(1.1);
-    border-color: #00ffff;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-}
-
-.sprite-item img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    image-rendering: pixelated;
-    filter: drop-shadow(0 0 5px rgba(255, 0, 255, 0.5));
-}
-
-.sprite-item span {
-    display: block;
-    margin-top: 0.5em;
-    font-size: 0.9em;
-    color: #00ffff;
-}
-
 /* Team Section */
 
 .team-card {
