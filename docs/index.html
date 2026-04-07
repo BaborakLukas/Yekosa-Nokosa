@@ -460,20 +460,55 @@
             }
         })();
 
-        let currentLang = 'en';
-        
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'cs' : 'en';
-            document.getElementById('lang-toggle').textContent = currentLang === 'en' ? 'CZ' : 'EN';
+        // Language detection: URL param > localStorage > browser language > default 'en'
+        function getInitialLang() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang === 'cs' || urlLang === 'en') return urlLang;
+
+            const stored = localStorage.getItem('kosa-lang');
+            if (stored === 'cs' || stored === 'en') return stored;
+
+            const browserLang = navigator.language || navigator.userLanguage || '';
+            if (browserLang.startsWith('cs')) return 'cs';
+
+            return 'en';
+        }
+
+        let currentLang = getInitialLang();
+
+        function applyLanguage() {
+            const btn = document.getElementById('lang-toggle');
+            btn.textContent = currentLang === 'en' ? 'CZ' : 'EN';
             document.documentElement.lang = currentLang;
-            
+
             document.querySelectorAll('[data-en]').forEach(el => {
                 const text = el.getAttribute('data-' + currentLang);
                 if (text) {
                     el.innerHTML = text;
                 }
             });
+
+            // Persist choice
+            localStorage.setItem('kosa-lang', currentLang);
+
+            // Update URL without reload
+            const url = new URL(window.location);
+            if (currentLang === 'en') {
+                url.searchParams.delete('lang');
+            } else {
+                url.searchParams.set('lang', currentLang);
+            }
+            history.replaceState(null, '', url);
         }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'cs' : 'en';
+            applyLanguage();
+        }
+
+        // Apply language on page load
+        applyLanguage();
     </script>
 </body>
 </html>

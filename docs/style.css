@@ -99,8 +99,8 @@ header {
 }
 
 #lang-toggle {
-    position: absolute;
-    right: 2em;
+    flex-shrink: 0;
+    margin-left: auto;
     background: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
     border: none;
     color: white;
@@ -810,8 +810,9 @@ footer {
     .section-title { font-size: 1.4rem; }
     #game-title { font-size: 3.5em; }
     .tagline { font-size: 1em; }
-    header { padding: 0.3em 1em; }
+    header { padding: 0.3em 1em; flex-wrap: wrap; }
     header a > h1 { font-size: 0.9em; }
+    #lang-toggle { padding: 0.3em 0.7em; font-size: 0.85em; }
     .intro-text { font-size: 1.3em; }
     .feature-card, .brother-card { padding: 1.5em; }
     .loop-steps { flex-direction: column; }
