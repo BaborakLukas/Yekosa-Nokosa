@@ -79,9 +79,11 @@ header a > h1 {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0 1em;
-    font-weight: 400;
-    font-size: 1.3em;
-    font-family: 'ViceCity', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Video Hero Section */
@@ -90,6 +92,7 @@ header a > h1 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    box-shadow: #1a0a2e 0px 0px 50px inset;
 }
 
 #Retrowave {
