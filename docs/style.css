@@ -1,11 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/rustproof-body');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 @font-face {
     font-family: 'ViceCity';
     src: url('rage italic.ttf') format('truetype');
     font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 /* Skip link for accessibility */
 .skip-link:focus {
