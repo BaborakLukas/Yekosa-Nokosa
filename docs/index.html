@@ -211,7 +211,7 @@
     </noscript>
 
     <div class="video-container">
-        <video autoplay loop muted playsinline preload="metadata" src="retrowave_loop.mp4" id="Retrowave"></video>
+        <video autoplay loop muted playsinline preload="auto" src="retrowave_loop.mp4" id="Retrowave"></video>
         <div class="overlay">
             <img src="kosa_nobg.png" alt="KO:SA Game Logo - Action Survival Co-op Game" class="logo">
             <a href="KOSA.exe" download class="download-btn" data-en="Download Game" data-cs="Stáhnout hru" aria-label="Download KO:SA game for Windows PC" role="button">
@@ -435,6 +435,31 @@
     </footer>
 
     <script>
+        // Force video play on Opera and other browsers that may pause on refresh
+        (function() {
+            var video = document.getElementById('Retrowave');
+            if (video) {
+                function tryPlay() {
+                    var p = video.play();
+                    if (p !== undefined) {
+                        p.catch(function() {
+                            video.muted = true;
+                            video.play();
+                        });
+                    }
+                }
+                video.addEventListener('loadeddata', tryPlay);
+                // Re-trigger on page show (back-forward cache / refresh)
+                window.addEventListener('pageshow', tryPlay);
+                // Resume if browser paused it (tab visibility change)
+                document.addEventListener('visibilitychange', function() {
+                    if (!document.hidden && video.paused) tryPlay();
+                });
+                // If video is already ready (cached), play immediately
+                if (video.readyState >= 2) tryPlay();
+            }
+        })();
+
         let currentLang = 'en';
         
         function toggleLanguage() {
