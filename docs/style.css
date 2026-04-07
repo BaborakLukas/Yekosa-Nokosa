@@ -185,27 +185,6 @@ section {
     text-shadow: 0 0 10px #ff00ff;
 }
 
-.palmtree {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 250px;
-    height: auto;
-    z-index: 1;
-    opacity: 0.7;
-    pointer-events: none;
-    padding: 40px;
-}
-
-.palmtree img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-#palmtree-left { left: 0; }
-#palmtree-right { right: 0; transform: translateY(-50%) scaleX(-1); }
-
 /* About Section */
 .about-content {
     text-align: center;
