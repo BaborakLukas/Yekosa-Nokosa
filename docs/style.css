@@ -2,14 +2,54 @@
 @font-face {
     font-family: 'ViceCity';
     src: url('rage italic.ttf') format('truetype');
+    font-display: swap;
 }
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Skip link for accessibility */
+.skip-link:focus {
+    position: fixed !important;
+    left: 10px !important;
+    top: 10px !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 1em;
+    background: #ff00ff;
+    color: white;
+    z-index: 10000;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #00ffff;
+    outline-offset: 3px;
 }
 
 body {

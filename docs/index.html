@@ -3,43 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>KO:SA - Action/Survival Co-op Game | 2D Platformer</title>
+    <meta name="description" content="KO:SA is a 2D action/survival co-op game where two brothers fight corrupted bugs to protect The Mother. Play local co-op, transform into weapons, and survive waves of enemies.">
+    <meta name="keywords" content="KO:SA, KOSA, indie game, co-op game, survival game, action game, 2D platformer, Godot, local multiplayer, wave survival">
+    <meta name="author" content="David MixIns, Popper Dell Cribt">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://baboraklukas.github.io/Yekosa-Nokosa/">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a0a2e">
+    <meta name="msapplication-TileColor" content="#1a0a2e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Hreflang for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://baboraklukas.github.io/Yekosa-Nokosa/">
+    <link rel="alternate" hreflang="cs" href="https://baboraklukas.github.io/Yekosa-Nokosa/?lang=cs">
+    <link rel="alternate" hreflang="x-default" href="https://baboraklukas.github.io/Yekosa-Nokosa/">
+    
+    <!-- Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baboraklukas.github.io/Yekosa-Nokosa/">
+    <meta property="og:title" content="KO:SA - Action/Survival Co-op Game">
+    <meta property="og:description" content="A 2D action/survival co-op game where two brothers fight corrupted bugs to protect The Mother. Transform into weapons, collect shards, survive waves!">
+    <meta property="og:image" content="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="KO:SA gameplay screenshot showing 2D platformer action">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta property="og:site_name" content="KO:SA Game">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KO:SA - Action/Survival Co-op Game">
+    <meta name="twitter:description" content="A 2D action/survival co-op game where two brothers fight corrupted bugs to protect The Mother.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png">
+    <meta name="twitter:image:alt" content="KO:SA gameplay screenshot">
+    
+    <!-- GEO Tags (Geographic) -->
+    <meta name="geo.region" content="CZ">
+    <meta name="geo.placename" content="Varnsdorf">
+    <meta name="ICBM" content="50.9114, 14.6181">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="kosa_nobg.png">
+    <link rel="apple-touch-icon" href="kosa_nobg.png">
+    
+    <!-- Preconnect & Preload for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <link rel="dns-prefetch" href="https://github.com">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <title>KO:SA - Action/Survival Co-op Game</title>
+    
+    <!-- Structured Data / Schema.org - VideoGame -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "KO:SA",
+        "alternateName": ["KOSA", "Yekosa-Nokosa"],
+        "description": "KO:SA is an action/survival co-op game about two brothers who collect shards and fight off bug-like enemies to protect The Mother. Features local co-op gameplay, weapon transformation mechanics, and wave-based combat.",
+        "genre": ["Action", "Survival", "Platformer", "Co-op", "Indie"],
+        "gamePlatform": ["PC", "Windows"],
+        "numberOfPlayers": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 2
+        },
+        "playMode": ["SinglePlayer", "CoOp"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Windows",
+        "gameItem": [
+            {"@type": "Thing", "name": "Shards", "description": "Collectible items dropped by enemies used for upgrades"},
+            {"@type": "Thing", "name": "The Mother", "description": "Central entity that players must protect"}
+        ],
+        "character": [
+            {"@type": "Thing", "name": "Yekosa", "description": "Close-range fighter brother who can transform into a weapon"},
+            {"@type": "Thing", "name": "Nokosa", "description": "Long-range gunner brother who can transform into a weapon"}
+        ],
+        "author": [
+            {"@type": "Person", "name": "David MixIns"},
+            {"@type": "Person", "name": "Popper Dell Cribt"}
+        ],
+        "contributor": {"@type": "Person", "name": "Wiredkya", "jobTitle": "Logo Designer"},
+        "image": "https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png",
+        "screenshot": "https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png",
+        "url": "https://baboraklukas.github.io/Yekosa-Nokosa/",
+        "sameAs": "https://github.com/BaborakLukas/Yekosa-Nokosa",
+        "downloadUrl": "https://baboraklukas.github.io/Yekosa-Nokosa/KOSA.exe",
+        "softwareVersion": "Development",
+        "dateCreated": "2024",
+        "inLanguage": ["en", "cs"],
+        "isAccessibleForFree": true,
+        "contentRating": "Teen"
+    }
+    </script>
+    
+    <!-- Structured Data - FAQ for GEO (AI Search Optimization) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is KO:SA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KO:SA is a 2D action/survival co-op game where two brothers collect shards and fight bug-like enemies to protect The Mother, a central entity keeping their world alive. It features local co-op gameplay with a unique weapon transformation mechanic."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many players can play KO:SA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KO:SA supports 1-2 players in local co-op mode. Two players can play together on the same computer, with one player controlling Yekosa (close-range fighter) and the other controlling Nokosa (long-range gunner)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the weapon transformation mechanic in KO:SA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In KO:SA, each brother can transform into a weapon form. When transformed, the player can still jump and dash, but the other player can pick them up and use them as a powerful weapon. This creates unique cooperative gameplay strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are shards in KO:SA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Shards are collectible items in KO:SA dropped by defeated enemies. Players collect shards to upgrade weapons, improve mobility, and enhance The Mother's defenses between waves."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What game engine is KO:SA made with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KO:SA is developed using Godot Engine 4.5.1, a modern open-source game engine, and programmed in GDScript."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is KO:SA free to play?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, KO:SA is a free indie game developed as a school project. You can download it for free from the official website."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Structured Data - WebPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "KO:SA - Action/Survival Co-op Game",
+        "description": "Official website for KO:SA, a 2D action/survival co-op game",
+        "url": "https://baboraklukas.github.io/Yekosa-Nokosa/",
+        "inLanguage": ["en", "cs"],
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "KO:SA Game",
+            "url": "https://baboraklukas.github.io/Yekosa-Nokosa/"
+        },
+        "about": {
+            "@type": "VideoGame",
+            "name": "KO:SA"
+        },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".intro-text", ".story-text", "#about-game"]
+        }
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div id="header-links">
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+    
+    <header role="banner">
+        <nav id="header-links" role="navigation" aria-label="Main navigation">
             <a href="#about-game"><h1 data-en="About" data-cs="O hře">About</h1></a>
             <a href="#features"><h1 data-en="Features" data-cs="Funkce">Features</h1></a>
             <a href="#mechanics"><h1 data-en="Mechanics" data-cs="Mechaniky">Mechanics</h1></a>
             <a href="#tech"><h1 data-en="Tech" data-cs="Tech">Tech</h1></a>
             <a href="#team"><h1 data-en="Team" data-cs="Tým">Team</h1></a>
-        </div>
-        <button id="lang-toggle" onclick="toggleLanguage()">CZ</button>
+        </nav>
+        <button id="lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language between English and Czech">CZ</button>
     </header>
+    
+    <noscript>
+        <style>
+            .video-container video { display: none; }
+            .video-container { background: linear-gradient(180deg, #1a0a2e 0%, #663399 100%); }
+        </style>
+    </noscript>
 
     <div class="video-container">
-        <video autoplay loop muted src="retrowave_loop.mp4" id="Retrowave"></video>
+        <video autoplay loop muted playsinline preload="metadata" src="retrowave_loop.mp4" id="Retrowave"></video>
         <div class="overlay">
-            <img src="kosa_nobg.png" alt="Game Logo" class="logo">
-            <a href="KOSA.exe" download class="download-btn" data-en="Download Game" data-cs="Stáhnout hru">
-                <span class="download-icon">⬇</span> Download Game
+            <img src="kosa_nobg.png" alt="KO:SA Game Logo - Action Survival Co-op Game" class="logo" width="300" height="300">
+            <a href="KOSA.exe" download class="download-btn" data-en="Download Game" data-cs="Stáhnout hru" aria-label="Download KO:SA game for Windows PC" role="button">
+                <span class="download-icon" aria-hidden="true">⬇</span> Download Game
             </a>
         </div>
     </div>
 
-    <main>
+    <main id="main-content" role="main">
         <!-- About Section -->
-        <section id="about-game">
+        <section id="about-game" aria-labelledby="about-title">
             <div class="section-content">
                 <div class="title-wrapper">
-                    <h2 class="section-title" data-en="What is KO:SA?" data-cs="Co je KO:SA?">What is KO:SA?</h2>
+                    <h2 id="about-title" class="section-title" data-en="What is KO:SA?" data-cs="Co je KO:SA?">What is KO:SA?</h2>
                 </div>
                 <div class="about-content">
                     <p class="intro-text" data-en="KO:SA is an <span class='highlight'>action/survival</span> game about two brothers who collect <span class='highlight'>shards</span>, and fight off <span class='highlight'>bug-like enemies</span> to protect <span class='highlight'>The Mother</span> - a central entity keeping their world alive." data-cs="KO:SA je <span class='highlight'>akční/survival</span> hra o dvou bratrech, kteří sbírají <span class='highlight'>úlomky</span> a bojují proti <span class='highlight'>hmyzím nepřátelům</span>, aby ochránili <span class='highlight'>Matku</span> - centrální entitu, která udržuje jejich svět naživu.">KO:SA is an <span class="highlight">action/survival</span> game about two brothers who collect <span class="highlight">shards</span>, and fight off <span class="highlight">bug-like enemies</span> to protect <span class="highlight">The Mother</span> - a central entity keeping their world alive.</p>
                     
                     <div class="gameplay-preview">
-                        <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png" alt="KO:SA Gameplay Preview" class="preview-image">
+                        <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/latest%20prewiev.png" alt="KO:SA Gameplay Preview showing 2D platformer action with two brothers fighting bugs" class="preview-image" loading="lazy">
                     </div>
 
                     <div class="story-box">
@@ -49,7 +241,7 @@
                                 <p data-en="The world has been overrun by <strong>system bugs</strong> - corrupted, insect-like entities that are slowly destroying reality. The last hope is <strong>The Mother</strong>, a protected core that will give birth to the future savior. The two brothers must hold the line, collect power shards, and keep The Mother alive long enough." data-cs="Svět byl přemožen <strong>systémovými bugy</strong> - poškozenými, hmyzu podobnými entitami, které pomalu ničí realitu. Poslední nadějí je <strong>Matka</strong>, chráněné jádro, které porodí budoucího spasitele. Dva bratři musí držet linii, sbírat energetické úlomky a udržet Matku dostatečně dlouho naživu.">The world has been overrun by <strong>system bugs</strong> - corrupted, insect-like entities that are slowly destroying reality. The last hope is <strong>The Mother</strong>, a protected core that will give birth to the future savior. The two brothers must hold the line, collect power shards, and keep The Mother alive long enough.</p>
                             </div>
                             <div class="mother-image">
-                                <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/finalMutti.png" alt="The Mother">
+                                <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/finalMutti.png" alt="The Mother - central entity in KO:SA game that players must protect" loading="lazy">
                                 <span class="image-label" data-en="The Mother" data-cs="Matka">The Mother</span>
                             </div>
                         </div>
@@ -59,37 +251,37 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features">
+        <section id="features" aria-labelledby="features-title">
             <div class="section-content">
                 <div class="title-wrapper">
-                    <h2 class="section-title" data-en="Core Features" data-cs="Hlavní funkce">Core Features</h2>
+                    <h2 id="features-title" class="section-title" data-en="Core Features" data-cs="Hlavní funkce">Core Features</h2>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa" class="feature-sprite">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nekosa" class="feature-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa - close-range fighter brother" class="feature-sprite" loading="lazy">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nokosa - long-range gunner brother" class="feature-sprite" loading="lazy">
                         </div>
                         <h3 data-en="Local Co-op" data-cs="Lokální Co-op">Local Co-op</h3>
                         <p data-en="Play together as two brothers. One can transform into a weapon while the other wields them - true teamwork!" data-cs="Hrajte spolu jako dva bratři. Jeden se může proměnit ve zbraň, zatímco druhý s ní bojuje - skutečná týmová práce!">Play together as two brothers. One can transform into a weapon while the other wields them - true teamwork!</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/kulka.png" alt="Bullet" class="feature-sprite bullet-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/kulka.png" alt="Bullet projectile in KO:SA wave combat" class="feature-sprite bullet-sprite" loading="lazy">
                         </div>
                         <h3 data-en="Wave-Based Combat" data-cs="Boj ve vlnách">Wave-Based Combat</h3>
                         <p data-en="Survive increasingly difficult waves of corrupted bugs. Each wave brings stronger enemies and better rewards." data-cs="Přežijte stále obtížnější vlny poškozených brouků. Každá vlna přináší silnější nepřátele a lepší odměny.">Survive increasingly difficult waves of corrupted bugs. Each wave brings stronger enemies and better rewards.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/shard.png" alt="Shard" class="feature-sprite shard-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/shard.png" alt="Power shard collectible in KO:SA" class="feature-sprite shard-sprite" loading="lazy">
                         </div>
                         <h3 data-en="Shard Collection" data-cs="Sbírání úlomků">Shard Collection</h3>
                         <p data-en="Collect shards from defeated enemies to upgrade weapons, improve mobility, and enhance The Mother's defenses." data-cs="Sbírejte úlomky z poražených nepřátel pro vylepšení zbraní, zlepšení pohyblivosti a posílení obrany Matky.">Collect shards from defeated enemies to upgrade weapons, improve mobility, and enhance The Mother's defenses.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/gun.png" alt="Gun" class="feature-sprite gun-sprite">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/gun.png" alt="Weapon transformation gun in KO:SA" class="feature-sprite gun-sprite" loading="lazy">
                         </div>
                         <h3 data-en="Transformation" data-cs="Transformace">Transformation</h3>
                         <p data-en="Transform into weapon form - you can still jump and dash, but the other player can pick you up as a powerful weapon!" data-cs="Proměňte se ve zbraň - stále můžete skákat a dashovat, ale druhý hráč vás může sebrat jako mocnou zbraň!">Transform into weapon form - you can still jump and dash, but the other player can pick you up as a powerful weapon!</p>
@@ -99,16 +291,16 @@
         </section>
 
         <!-- Mechanics Section -->
-        <section id="mechanics">
+        <section id="mechanics" aria-labelledby="mechanics-title">
             <div class="section-content">
                 <div class="title-wrapper">
-                    <h2 class="section-title" data-en="Game Mechanics" data-cs="Herní mechaniky">Game Mechanics</h2>
+                    <h2 id="mechanics-title" class="section-title" data-en="Game Mechanics" data-cs="Herní mechaniky">Game Mechanics</h2>
                 </div>
                 
                 <div class="brothers-container">
                     <div class="brother-card">
                         <div class="brother-sprite">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa Icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/Icon_Yekosa.png" alt="Yekosa - close-range fighter character icon" loading="lazy" width="64" height="64">
                         </div>
                         <h3 data-en="Yekosa (Brother A)" data-cs="Yekosa (Bratr A)">Yekosa (Brother A)</h3>
                         <p class="brother-role" data-en="Runner / Short-range" data-cs="Běžec / Krátký dosah">Runner / Short-range</p>
@@ -122,7 +314,7 @@
                     </div>
                     <div class="brother-card">
                         <div class="brother-sprite">
-                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nekosa Icon">
+                            <img src="https://raw.githubusercontent.com/BaborakLukas/Yekosa-Nokosa/main/sprites_assets/icon_nekosa.png" alt="Nokosa - long-range gunner character icon" loading="lazy" width="64" height="64">
                         </div>
                         <h3 data-en="Nokosa (Brother B)" data-cs="Nokosa (Bratr B)">Nokosa (Brother B)</h3>
                         <p class="brother-role" data-en="Gunner / Long-range" data-cs="Střelec / Dlouhý dosah">Gunner / Long-range</p>
@@ -173,10 +365,10 @@
         </section>
 
         <!-- Tech Section -->
-        <section id="tech">
+        <section id="tech" aria-labelledby="tech-title">
             <div class="section-content">
                 <div class="title-wrapper">
-                    <h2 class="section-title" data-en="Technology" data-cs="Technologie">Technology</h2>
+                    <h2 id="tech-title" class="section-title" data-en="Technology" data-cs="Technologie">Technology</h2>
                 </div>
                 <div class="tech-stack">
                     <div class="tech-item">
@@ -206,10 +398,10 @@
         </section>
 
         <!-- Team Section -->
-        <section id="team">
+        <section id="team" aria-labelledby="team-title">
             <div class="section-content">
                 <div class="title-wrapper">
-                    <h2 class="section-title" data-en="The Team" data-cs="Tým">The Team</h2>
+                    <h2 id="team-title" class="section-title" data-en="The Team" data-cs="Tým">The Team</h2>
                 </div>
                 <div class="team-cards">
                     <div class="team-card">
@@ -226,7 +418,7 @@
                     </div>
                 </div>
                 <div class="github-link">
-                    <a href="https://github.com/BaborakLukas/Yekosa-Nokosa" target="_blank">
+                    <a href="https://github.com/BaborakLukas/Yekosa-Nokosa" target="_blank" rel="noopener noreferrer" aria-label="View KO:SA source code on GitHub">
                         <span data-en="View on GitHub" data-cs="Zobrazit na GitHubu">View on GitHub</span>
                     </a>
                 </div>
@@ -234,10 +426,11 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <p data-en="KO:SA - School Project | Godot Engine 4.5.1" data-cs="KO:SA - Školní projekt | Godot Engine 4.5.1">KO:SA - School Project | Godot Engine 4.5.1</p>
             <p data-en="Genre: 2D Platformer, Survival, Co-op | Target: ~15+ | Runtime: ~20 min per run" data-cs="Žánr: 2D Plošinovka, Survival, Co-op | Cílová skupina: ~15+ | Délka: ~20 min na hru">Genre: 2D Platformer, Survival, Co-op | Target: ~15+ | Runtime: ~20 min per run</p>
+            <p>© 2024 KO:SA Team. <span data-en="Made in Czech Republic" data-cs="Vyrobeno v České republice">Made in Czech Republic</span></p>
         </div>
     </footer>
 
