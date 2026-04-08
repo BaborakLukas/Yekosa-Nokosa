@@ -810,9 +810,10 @@ footer {
     .section-title { font-size: 1.4rem; }
     #game-title { font-size: 3.5em; }
     .tagline { font-size: 1em; }
-    header { padding: 0.3em 1em; flex-wrap: wrap; }
-    header a > h1 { font-size: 0.9em; }
-    #lang-toggle { padding: 0.3em 0.7em; font-size: 0.85em; }
+    header { padding: 0.3em 0.5em; flex-wrap: wrap; justify-content: center; gap: 0.5em; }
+    header #header-links { flex-wrap: wrap; justify-content: center; gap: 0.4em; }
+    header a > h1 { font-size: 0.8em; padding: 0 0.4em; border-left: none; border-right: none; }
+    #lang-toggle { padding: 0.3em 0.7em; font-size: 0.85em; margin-left: 0; }
     .intro-text { font-size: 1.3em; }
     .feature-card, .brother-card { padding: 1.5em; }
     .loop-steps { flex-direction: column; }
