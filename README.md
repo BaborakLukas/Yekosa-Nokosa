@@ -10,9 +10,9 @@ KO:SA is an action/survival game about two brothers who collect **shards**, and 
 ## Current state
 - [x] Idea / core fantasy
 - [x] Basic prototype in Godot
-- [ ] Playable level
+- [x] Playable level
 - [x] Art & sound
-- [ ] Release build
+- [x] Release build
 
 ## Tech
 - Godot Engine 4.5.1
